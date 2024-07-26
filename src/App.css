@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #ebe9e9;
+}
+header {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+}
+.logo {
+  text-decoration: none;
+}
+.logo img {
+  width: 45px;
+  /* margin-top: 6px; */
+}
+.logo span {
+  color: #1a1a1a;
+  font-weight: 800;
+  font-size: 24px;
+  margin-top: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button.rounded-circle {
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  background: #f0f5ff !important;
+  color: #292929;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.SearchBox {
+  width: 400px;
+  height: 50px;
+  background-color: #f0f5ff;
+  border-radius: 6px;
+  padding: 3px 1 5px;
+}
+.SearchBox input {
+  background: transparent;
+  border: 0px;
+  outline: none;
+  padding-left: 5px;
+  font-size: 15px;
+  color: #292929;
+}
+.SearchBox input ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0, 0);
+}
+.SearchBox svg {
+  font-size: 18px;
+  color: #292929;
+}
+.MyAcc .UserImg .rounded-circle {
   display: flex;
-  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+}
+.MyAcc .UserImg .rounded-circle img {
+  object-fit: cover;
+}
+.MyAcc {
+  text-align: left !important;
+  color: #000 !important;
+  text-transform: capitalize !important;
+}
+.MyAcc .UserInfo {
+  padding-left: 10px;
+}
+.MyAcc .UserInfo h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.MyAcc .UserInfo p {
+  margin-top: 0px;
+  font-size: 12px;
+  color: #000;
+  opacity: 0.7;
+}
+header button.rounded-circle {
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  background: #f0f5ff !important;
+  color: #292929;
+}
+header button.rounded-circle svg {
+  font-size: 18px !important;
+  transition: all 0 2s ease-in-out;
+  color: #292929;
+}
+header button.rounded-circle:hover svg {
+  color: rgb(79, 32, 234) !important;
+}
+
+.dropdown_list  {
+  /* right: 20px !important; */
+  width: 220px !important;
+  left: 1160px !important;
+  height: 345px !important;
+}
+
+.dropdown_list .h4order{
+  font-size: 20px;
+  font-weight: 600;
+}
+.OrderImg{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
+  /* height: 35px; */
+  /* width: 35px; */
+  /* border-radius: 20px; */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* .NotificationOrder{
+  height: 700px !important;
+  width: 700px !important;
+} */
+ .OrderImg img{
+  height: 40px;
+  width: 40px;
+ }
+ .NotiInfo{
+  padding-left: 14px;
+ }
+ .NotiInfo h4{
+  font-size: 20px;
+  white-space: break-spaces;
+ }
