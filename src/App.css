@@ -9,18 +9,26 @@ body {
   font-family: "Open Sans", sans-serif;
   background: #ebe9e9;
 }
+
 header {
   width: 100%;
   height: 70px;
   background: #fff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
 }
+
 .logo {
   text-decoration: none;
 }
+
 .logo img {
   width: 45px;
   /* margin-top: 6px; */
 }
+
 .logo span {
   color: #1a1a1a;
   font-weight: 800;
@@ -35,6 +43,7 @@ button.rounded-circle {
   background: #f0f5ff !important;
   color: #292929;
 }
+
 .SearchBox {
   width: 400px;
   height: 50px;
@@ -42,6 +51,7 @@ button.rounded-circle {
   border-radius: 6px;
   padding: 3px 1 5px;
 }
+
 .SearchBox input {
   background: transparent;
   border: 0px;
@@ -50,13 +60,16 @@ button.rounded-circle {
   font-size: 15px;
   color: #292929;
 }
+
 .SearchBox input ::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0, 0);
 }
+
 .SearchBox svg {
   font-size: 18px;
   color: #292929;
 }
+
 .MyAcc .UserImg .rounded-circle {
   display: flex;
   /* align-items: center; */
@@ -65,28 +78,34 @@ button.rounded-circle {
   height: 40px;
   width: 40px;
 }
+
 .MyAcc .UserImg .rounded-circle img {
   object-fit: cover;
 }
+
 .MyAcc {
   text-align: left !important;
   color: #000 !important;
   text-transform: capitalize !important;
 }
+
 .MyAcc .UserInfo {
   padding-left: 10px;
 }
+
 .MyAcc .UserInfo h4 {
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 0px;
 }
+
 .MyAcc .UserInfo p {
   margin-top: 0px;
   font-size: 12px;
   color: #000;
   opacity: 0.7;
 }
+
 header button.rounded-circle {
   min-width: 40px !important;
   width: 40px !important;
@@ -94,27 +113,30 @@ header button.rounded-circle {
   background: #f0f5ff !important;
   color: #292929;
 }
+
 header button.rounded-circle svg {
   font-size: 18px !important;
   transition: all 0 2s ease-in-out;
   color: #292929;
 }
+
 header button.rounded-circle:hover svg {
   color: rgb(79, 32, 234) !important;
 }
 
-.dropdown_list  {
+.dropdown_list {
   /* right: 20px !important; */
   width: 220px !important;
   left: 1160px !important;
   height: 345px !important;
 }
 
-.dropdown_list .h4order{
+.dropdown_list .h4order {
   font-size: 20px;
   font-weight: 600;
 }
-.OrderImg{
+
+.OrderImg {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,14 +150,153 @@ header button.rounded-circle:hover svg {
   height: 700px !important;
   width: 700px !important;
 } */
- .OrderImg img{
+.OrderImg img {
   height: 40px;
   width: 40px;
- }
- .NotiInfo{
+}
+
+.NotiInfo {
   padding-left: 14px;
- }
- .NotiInfo h4{
+}
+
+.NotiInfo h4 {
   font-size: 20px;
   white-space: break-spaces;
- }
+}
+
+.main .SidebarWrapper {
+  width: 20%;
+  flex: 0 0 20%;
+  transition: all 0.3s ease-in-out;
+}
+
+.main .SidebarWrapper .SideBar {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  top: 70px;
+  left: 0px;
+  background-color: #fff;
+  max-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 60px;
+
+}
+
+.main .SidebarWrapper:hover .SideBar::-webkit-scrollbar {
+  background: rgb(34, 137, 255) !important;
+}
+
+.main .SidebarWrapper .SideBar::-webkit-scrollbar {
+  width: 3px !important;
+}
+
+.main .SidebarWrapper .SideBar::-webkit-scrollbar-thumb {
+  background: transparent !important;
+}
+
+.main .SidebarWrapper .SideBar ul {
+  margin-bottom: 10px;
+}
+
+.main .SidebarWrapper .SideBar ul li {
+  list-style: none;
+}
+
+.main .SidebarWrapper .SideBar ul li Button {
+  color: #000;
+  text-align: left;
+  justify-content: left;
+  border-radius: 0px !important;
+  padding: 18px 15px !important;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.main .SidebarWrapper .SideBar ul li Button .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.main .SidebarWrapper .SideBar ul li Button .icon svg {
+  color: #000;
+  opacity: 0.8;
+  font-size: 22px;
+}
+
+.main .SidebarWrapper .SideBar ul li Button .arrow {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+}
+
+.main .SidebarWrapper .SideBar ul .SubMenu {
+  padding: 0px 45px;
+}
+
+.main .SidebarWrapper .SideBar ul .SubMenu li {
+  width: 100%;
+  list-style: none;
+  border-left: 1px solid rgb(34, 137, 255);
+  padding-left: 45px;
+}
+
+.main .SidebarWrapper .SideBar ul .SubMenu li a {
+  color: #5e5d75 !important;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0px;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all 0 3s;
+}
+
+.main .SidebarWrapper .SideBar ul .SubMenu li a:hover {
+  color: #0858f7 !important;
+
+}
+.main .SidebarWrapper .SideBar ul .SubMenuWrapper.colapsed{
+height: 0px;
+}
+.main .SidebarWrapper .SideBar ul .SubMenuWrapper.colapsed .SubMenu{
+opacity: 0;
+  }
+.main .SidebarWrapper .SideBar ul .SubMenuWrapper.colapse .SubMenu{
+    opacity: 1;
+    height: auto;
+    }
+    .main .SidebarWrapper .SideBar ul .SubMenuWrapper.colapse{
+      height: auto;
+      overflow: inherit;
+    }
+    .LogoutWrapper{
+      padding: 0px 25px;
+    }
+.LogoutWrapper .logoutBox{
+  width: 100%;
+  height:100px;
+  padding: 25px;
+  background: #bcd2fd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LogoutWrapper .logoutBox Button {
+font-size: 14px !important;
+font-weight: 600 !important;
+
+}
+.LogoutWrapper .logoutBox Button svg{
+  margin-right: 7px;
+}
