@@ -26,7 +26,7 @@ const Sidebar = () => {
             <ul>
                 <li>
                     <Link to="/">
-                        <Button className={`w-100 ${activeTab === 0 ? 'active' : ''}`} onClick={() => isOpenSubmenu(0)}>
+                        <Button className={`w-100 ${activeTab === 0 ? 'active' : ''}`} >
                             <span className='icon'><MdDashboard /></span>
                             Dashboard <span className='arrow'><FaAngleRight /></span>
                         </Button>
@@ -46,13 +46,13 @@ const Sidebar = () => {
                 </li>
                 <li>
                     <Link to="/">
-                        <Button className={`w-100 ${activeTab === 2 ? 'active' : ''}`} onClick={() => isOpenSubmenu(2)}><span className='icon'><FaCartShopping /></span>
+                        <Button className={`w-100 ${activeTab === 2 ? 'active' : ''}`} ><span className='icon'><FaCartShopping /></span>
                             Orders <span className='arrow'><FaAngleRight /></span></Button>
                     </Link>
                 </li>
                 <li>
                     <Link to="/">
-                        <Button className={`w-100 ${activeTab === 3 ? 'active' : ''}`} onClick={() => isOpenSubmenu(3)}><span className='icon'><FaMessage /></span>
+                        <Button className={`w-100 ${activeTab === 3 ? 'active' : ''}`} ><span className='icon'><FaMessage /></span>
                             Messages <span className='arrow'><FaAngleRight /></span></Button>
                     </Link>
                 </li>
@@ -64,44 +64,44 @@ const Sidebar = () => {
                 </li>
                 <li>
                     <Link to="/">
-                        <Button className={`w-100 ${activeTab === 4 ? 'active' : ''}`} onClick={() => isOpenSubmenu(4)}><span className='icon'><IoSettings />
+                        <Button className={`w-100 ${activeTab === 4 ? 'active' : ''}`} ><span className='icon'><IoSettings />
                         </span>
                             Settings <span className='arrow'><FaAngleRight /></span></Button>
                     </Link>
                 </li>
                 <li>
                     <Link to="/">
-                        <Button className={`w-100 ${activeTab === 5 ? 'active' : ''}`} onClick={() => isOpenSubmenu(5)}><span className='icon'><MdDashboard /></span>
+                        <Button className={`w-100 ${activeTab === 5 ? 'active' : ''}`} ><span className='icon'><MdDashboard /></span>
                             Dashboard <span className='arrow'><FaAngleRight /></span></Button>
                     </Link>
                 </li>
                 <li>
                     <Link to="/">
-                        <Button className={`w-100 ${activeTab === 6 ? 'active' : ''}`} onClick={() => isOpenSubmenu(6)}><span className='icon'><BiSolidCategory /></span>
+                        <Button className={`w-100 ${activeTab === 6 ? 'active' : ''}`} ><span className='icon'><BiSolidCategory /></span>
                             Products <span className='arrow'><FaAngleRight /></span></Button>
                     </Link>
                 </li>
                 <li>
                     <Link to="/">
-                        <Button className={`w-100 ${activeTab === 7 ? 'active' : ''}`} onClick={() => isOpenSubmenu(7)}><span className='icon'><FaCartShopping /></span>
+                        <Button className={`w-100 ${activeTab === 7 ? 'active' : ''}`} ><span className='icon'><FaCartShopping /></span>
                             Orders <span className='arrow'><FaAngleRight /></span></Button>
                     </Link>
                 </li>
                 <li>
                     <Link to="/">
-                        <Button className={`w-100 ${activeTab === 8 ? 'active' : ''}`} onClick={() => isOpenSubmenu(8)}><span className='icon'><FaMessage /></span>
+                        <Button className={`w-100 ${activeTab === 8 ? 'active' : ''}`} ><span className='icon'><FaMessage /></span>
                             Messages <span className='arrow'><FaAngleRight /></span></Button>
                     </Link>
                 </li>
                 <li>
                     <Link to="/">
-                        <Button className={`w-100 ${activeTab === 9 ? 'active' : ''}`} onClick={() => isOpenSubmenu(9)}><span className='icon'><FaBell /></span>
+                        <Button className={`w-100 ${activeTab === 9 ? 'active' : ''}`} ><span className='icon'><FaBell /></span>
                             Notiifications <span className='arrow'><FaAngleRight /></span></Button>
                     </Link>
                 </li>
                 <li>
                     <Link to="/">
-                        <Button className={`w-100 ${activeTab === 10 ? 'active' : ''}`} onClick={() => isOpenSubmenu(10)}><span className='icon'><IoSettings />
+                        <Button className={`w-100 ${activeTab === 10 ? 'active' : ''}`} ><span className='icon'><IoSettings />
                         </span>
                             Settings <span className='arrow'><FaAngleRight /></span></Button>
                     </Link>
